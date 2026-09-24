@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b0d" />
+    <title>zwzty | محفظتك الذكية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="grid-glow"></div>
+    <div class="login-screen" id="loginScreen">
+      <div class="login-orbit orbit-one"></div><div class="login-orbit orbit-two"></div>
+      <div class="login-panel glass-panel">
+        <div class="brand login-brand"><span class="brand-mark">z</span><span>zwzty</span></div>
+        <div class="login-heading"><span class="status-pill"><i></i> مساحة آمنة لأصولك</span><h1>مرحباً بك<br /><em>في مستقبلك.</em></h1><p>إدارة أصولك، متابعة فريقك، وتنمية رصيدك في مكان واحد.</p></div>
+        <form id="loginForm" class="login-form">
+          <label>رقم الهاتف</label><div class="phone-field"><select aria-label="مفتاح الدولة"><option>+218</option><option>+966</option><option>+20</option><option>+971</option></select><input id="phoneInput" type="tel" placeholder="91 000 0000" required /></div>
+          <label for="passwordInput">كلمة المرور</label><div class="password-field"><input id="passwordInput" type="password" placeholder="أدخل كلمة المرور" required minlength="4" /><button id="togglePassword" type="button" aria-label="إظهار كلمة المرور">◉</button></div>
+          <div class="form-meta"><label class="remember"><input type="checkbox" checked /> تذكرني</label><a href="#help">نسيت كلمة المرور؟</a></div>
+          <button class="neon-button full-button" type="submit">تسجيل الدخول <span>←</span></button>
+          <p class="login-foot">ليس لديك حساب؟ <button id="signupButton" type="button">أنشئ حساباً جديداً</button></p>
+        </form>
+        <p class="demo-note">نسخة تجريبية للواجهة · لا توجد معاملات مالية حقيقية</p>
+      </div>
+      <div class="login-aside"><span class="tiny-label">TP ENERGY / 24</span><strong>Own your<br /><em>energy.</em></strong><p>أدوات واضحة. قرارات أذكى.</p><div class="mini-orb">✦</div></div>
+    </div>
+
+    <div class="app-shell" id="appShell" hidden>
+      <header class="app-header"><a class="brand" href="#home"><span class="brand-mark">z</span><span>zwzty</span></a><div class="header-actions"><button class="header-action" type="button" title="تغيير اللغة">ع <small>EN</small></button><button class="header-action" type="button" title="تحديث البيانات">↻</button><button class="header-action notification" type="button" title="الإشعارات">♧<i></i></button><button class="profile-chip" type="button"><span class="profile-avatar">م</span><span><strong>محمد سالم</strong><small>مستوى L2</small></span><b>⌄</b></button></div></header>
+      <main class="app-main" id="home">
+        <section class="welcome-row"><div><p class="section-kicker">الأحد، ٢٤ نوفمبر ٢٠٢٤ <span class="live-dot"></span></p><h1>صباح الخير، <em>محمد.</em></h1><p class="section-subtitle">هذه لمحة عن طاقتك وأصولك اليوم.</p></div><div class="rank-card glass-panel"><span class="rank-icon">✦</span><div><small>رتبتك الحالية</small><strong>L2 <i>+12%</i></strong></div><span class="rank-arrow">↗</span></div></section>
++        <section class="balance-grid"><article class="balance-card glass-panel"><div class="card-top"><span class="card-label">إجمالي رصيد المحفظة <button class="eye-button" id="toggleBalance" type="button" title="إخفاء الرصيد">◉</button></span><span class="wallet-status"><i></i> متصل</span></div><div class="balance-amount" id="balanceAmount">12,840<span>.56</span> <small>USDT</small></div><div class="balance-change"><span>+ 248.20 USDT</span><small>+ 4.8% هذا الشهر</small></div><div class="balance-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="card-actions"><button class="neon-button" type="button" data-action="deposit">إيداع <span>↓</span></button><button class="outline-button" type="button" data-action="withdraw">سحب <span>↑</span></button></div></article><article class="energy-card glass-panel"><div class="card-top"><span class="card-label">TP Energy</span><span class="coin-mark">TP</span></div><div class="energy-main"><div><strong>8,492.00</strong><small>TPX</small></div><div class="energy-ring"><span>+18.6%</span></div></div><div class="energy-footer"><span>قيمة اليوم</span><strong>$1,274.80 <i>↗</i></strong></div></article></section>
++        <section class="content-grid"><article class="panel-card glass-panel assets-card"><div class="panel-heading"><div><h2>الأصول</h2><p>محفظتك موزعة بذكاء</p></div><button class="more-button" type="button">عرض الكل <span>←</span></button></div><div class="asset-tabs"><button class="asset-tab active" type="button" data-tab="all">الكل</button><button class="asset-tab" type="button" data-tab="flexible">مرن</button><button class="asset-tab" type="button" data-tab="locked">مخزن</button></div><div class="asset-list"><div class="asset-row" data-kind="flexible"><span class="coin-icon usdt">₮</span><div class="asset-name"><strong>USDT</strong><small>Tether USD</small></div><div class="asset-value"><strong>8,420.56</strong><small>$8,420.56</small></div><span class="asset-change positive">+2.4%</span></div><div class="asset-row" data-kind="locked"><span class="coin-icon tpx">✦</span><div class="asset-name"><strong>TP Energy</strong><small>TPX</small></div><div class="asset-value"><strong>8,492.00</strong><small>$1,274.80</small></div><span class="asset-change positive">+18.6%</span></div><div class="asset-row" data-kind="flexible"><span class="coin-icon usdc">$</span><div class="asset-name"><strong>USDC</strong><small>USD Coin</small></div><div class="asset-value"><strong>3,145.80</strong><small>$3,145.80</small></div><span class="asset-change negative">-0.8%</span></div></div></article><article class="panel-card glass-panel activity-card"><div class="panel-heading"><div><h2>نشاطك الأخير</h2><p>آخر تحركات الحساب</p></div><button class="filter-button" type="button">هذا الشهر⌄</button></div><div class="activity-list"><div class="activity-row"><span class="activity-icon deposit">↓</span><div><strong>إيداع USDT</strong><small>اليوم، ١١:٤٢ ص</small></div><b class="positive">+ 1,200.00</b></div><div class="activity-row"><span class="activity-icon stake">✦</span><div><strong>تجميد TP Energy</strong><small>أمس، ٠٨:١٥ م</small></div><b>8,000.00 TPX</b></div><div class="activity-row"><span class="activity-icon team">♧</span><div><strong>مكافأة الفريق</strong><small>٢٢ نوفمبر، ٠٦:٣٠ م</small></div><b class="positive">+ 86.20</b></div></div><button class="all-activity" type="button">كل النشاط <span>←</span></button></article></section>
++        <section class="bottom-grid"><article class="team-card glass-panel"><div class="team-copy"><span class="section-kicker">شبكتك تنمو</span><h2>اجعل فريقك<br /><em>أقوى معاً.</em></h2><p>شارك رمز الدعوة مع أصدقائك واحصل على مكافآت من نمو الفريق.</p><button class="outline-button" id="copyInvite" type="button">نسخ رمز الدعوة <strong>ZW-8K4P</strong></button></div><div class="team-stats"><div><small>إجمالي دخل الفريق</small><strong>$18,420.80</strong><span>+ 12.4%</span></div><div><small>أعضاء الفريق</small><strong>248</strong><span>+ 16 هذا الشهر</span></div></div></article><article class="help-card glass-panel"><span class="help-icon">?</span><span class="section-kicker">تحتاج مساعدة؟</span><h3>مركز المساعدة<br />دائماً معك.</h3><button class="text-button" type="button">استكشف المركز <span>←</span></button><div class="help-lines"></div></article></section>
++      </main>
++      <nav class="bottom-nav" aria-label="التنقل الأساسي"><button class="bottom-link active" type="button" data-view="الرئيسية"><span>⌂</span>الرئيسية</button><button class="bottom-link" type="button" data-view="الفريق"><span>♧</span>الفريق</button><button class="trade-button" type="button" data-action="trade"><span>↔</span><small>تحويل</small></button><button class="bottom-link" type="button" data-view="الأصول"><span>◈</span>الأصول</button><button class="bottom-link" type="button" data-view="الملف الشخصي"><span>◉</span>الملف</button></nav>
++    </div>
++    <div class="toast" id="toast" role="status" aria-live="polite"></div>
++    <script src="script.js"></script>
++  </body>
++</html>
